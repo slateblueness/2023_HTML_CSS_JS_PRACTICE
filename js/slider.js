@@ -13,7 +13,7 @@ let currentSlide = 1;
 
 /* 버튼을 눌렀을 때 left값이 이동하도록 */
 // nextButton
-nextButton.addEventListener("click", function(){
+nextButton.addEventListener("click", function(e){
     // 현재 슬라이더가 전체 개수보다 작을 때 실행
     if(currentSlide<maxSlide){
         currentSlide++; // 2일 때: -100%, 3일 때: -200%, 4일 때: -300% → 화면의 넓이를 곱해서 이동
@@ -25,7 +25,7 @@ nextButton.addEventListener("click", function(){
 })
 
 // prevButton
-prevButton.addEventListener("click", function(){
+prevButton.addEventListener("click", function(e){
     // 현재 슬라이더가 1보다 클 때 실행
     if(currentSlide>1){
         currentSlide--; // 2일 때: -100%, 3일 때: -200%, 4일 때: -300% → 화면의 넓이를 곱해서 이동
